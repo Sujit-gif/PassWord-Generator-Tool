@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Gen...</title>
+   <link rel="icon" href="fav.ico" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw">
+                <span id="pw">Password Here</span>
+                <button id="copy">Copy</button>
+         </div>
+        </div>
+        <div class="pw-body">
+            <div class="font-control">
+                <label for="length">Password Length</label>
+                <input id="len" value="10" type="number" min="6" max="25">
+
+            </div>
+               <div class="form-control">
+                <label for="upper">Contain UperCase Letters</label>
+                <input id="upper" type="checkbox">
+
+               </div>
+               <div class="form-control">
+                <label for="lower">Contain LowerCase Letter</label>
+                <input id="lower" type="checkbox">
+               </div>
+               
+               <div class="form-control">
+                <label for="number">Contain Number</label>
+                <input type="checkbox" id="number">
+               </div>
+
+               <div class="form-control">
+                <label for="symbol">Contain Symbol</label>
+                <input type="checkbox" id="symbol">
+               </div>
+               <button class="generate" id="generate">Generate Password</button>
+
+        </div>      
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
